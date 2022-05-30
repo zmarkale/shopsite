@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <style>
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding-top: 16px;
+            padding-bottom: 120px;
+            border-style: solid;
+            border-radius: 12px;
+            margin-top: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+            background: antiquewhite;
+            width: 500px;
+            height: 600px;
+        }
+
+        .heading {
+            color: brown;
+            font-family: sans-serif bold;
+            font-size: x-large;
+            margin-top: 0px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        select,.reg {
+            height: 40px;
+        }
+
+        input[type=text],
+        input[type=date],input[type=number],select {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            outline: none;
+            width: 200px;
+            justify-content: space-between;
+        }
+
+        input[type=text],
+        input[type=date],input[type=number] {
+            height: 33px;
+        }
+
+        .card-details {
+            margin-left: 30px;
+
+        }
+
+        #pls {
+            color: brown;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 10px !important;
+            margin-bottom: 30px;
+        }
+        .reg{
+            width: 300px;
+            color: white;
+            background: brown;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 90px;
+            border-radius: 40px;
+        }
+        #sel-cit{
+                width: 207.2px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">Employee Registration Form</div>
+        <div id="pls">
+            Please fill in th information requested below in order to complete
+            the employee registration. <q>Thank You!</q>
+        </div>
+        <form action="#">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Employee Name <span style="color: red;">*</span> </span> <br>
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+
+                <div class="card-box">
+                    <br> <span class="details" >Gender<span style="color: red;">*</span></span><br>
+                    <input type="radio" id="M" name="gender" style="margin-top: 10px;">M
+                    <input type="radio" id="female" name="gender" style="margin-top: 10px;">F
+                </div>
+
+                <div class="card-box">
+                    <br> <span class="details">Marital status<span style="color: red;">*</span></span>
+                    <span class="details" style="margin-left: 85px;">Date Of Birth<span style="color: red;">*</span></span>
+                    <br> <select name="marital_status" id="marital_status">
+                        <option value="">-Select Marital Status-<span style="color: red;">*</span></option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+
+                    <input type="Date" style="margin-left: 10px;">
+                </div>
+
+                <div class=" card-box">
+                    <br> <span class="details">Email<span style="color: red;">*</span></span>
+                    <span class="details" style="margin-left: 150px;">Phone</span><br>
+                    <input type="text" placeholder="Email Address">
+                    <input type="number" placeholder="### ### #####">
+                </div>
+                <div class="card-box">
+                    <span class="details">Home Address</span><br>
+                    <input type="address" placeholder="street Address"
+                     style="width: 412px!important; height: 30px; margin: 10px 0 10px 0;">
+                    <br>
+                    <select name="cit" id="sel-cit">
+                        <option value="">-- City --</span></option>
+                        <option value="Single">NAINITAL</option>
+                        <option value="Married">KOLHAPUR</option>
+                        <option value="Widowed">MUMBAI</option>
+                        <option value="Separated">PUNE</option>
+                        <option value="Divorced">NAGPUR</option>
+                    </select>
+                    <select name="state" id="sel-state">
+                        <option value="">-- State --</span></option>
+                        <option value="Single">MAHARASHTRA</option>
+                        <option value="Married">GOA</option>
+                        <option value="Widowed">KARNATAKA</option>
+                        <option value="Separated">DELHI</option>
+                        <option value="Divorced">KASHMIR</option>
+                    </select>
+                    <br>
+                    <input type="text" placeholder="Zip Code">
+                    <select name="con" id="sel-con">
+                        <option value="">-- Country --</span></option>
+                        <option value="Single">INDIA</option>
+                        <option value="Married">UK</option>
+                        <option value="Widowed">RUSSIA</option>
+                        <option value="Separated">NETHERLAND</option>
+                        <option value="Divorced">AMERICA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="reg">
+               <div style="padding-top: 10px;"> REGISTER NEW EMPLOYEE</div>
+            </div>
+    </div>
+</body>
+</html>
